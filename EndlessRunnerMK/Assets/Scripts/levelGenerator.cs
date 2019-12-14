@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class levelGenerator : MonoBehaviour
 {
-    private float nextSpawnPoint = 44f;
+    public float nextSpawnPoint = 44f;
     public objectPool[] objectPool;
     public Transform generationPoint; //Checks if we are at a position where we need to generate a new platform
     private int prefabSelector;
@@ -19,9 +19,7 @@ public class levelGenerator : MonoBehaviour
         prefab.transform.position = spawnPosition;
         prefab.transform.rotation = transform.rotation;
         prefab.SetActive(true);
-        Debug.Log("Before" + nextSpawnPoint);
         nextSpawnPoint += 22f;
-        Debug.Log("After" + nextSpawnPoint);
     }
 
     // Update is called once per frame
@@ -32,5 +30,9 @@ public class levelGenerator : MonoBehaviour
             GameObject randomPrefab = objectPool[prefabSelector].getPooledObject();
             placePrefab(randomPrefab, new Vector3(nextSpawnPoint,0));
         }
+    }
+
+    public void setNextSpawnPoint(float f){
+        nextSpawnPoint=f;
     }
 }

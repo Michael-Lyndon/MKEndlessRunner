@@ -17,7 +17,6 @@ public class prefabDeactivate : MonoBehaviour
     {
         if(prefabDeactivationPoint.transform.position.x > transform.position.x){
             gameObject.SetActive(false);
-            Debug.Log("Deavtiate");
         }
     }
 }
