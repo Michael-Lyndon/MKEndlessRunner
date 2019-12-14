@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3078160077225813475}
   - component: {fileID: 3078160077225813474}
   m_Layer: 8
-  m_Name: Floor_1
+  m_Name: Floor 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3078160077297716315}
+  - component: {fileID: 7203090779248291563}
   m_Layer: 8
   m_Name: levelPrefab1
   m_TagString: Untagged
@@ -141,6 +142,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7203090779248291563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078160077297716314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b23991344d7b442b94e3d59d6be0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabDeactivationPoint: {fileID: 0}
 --- !u!1 &3078160078026564252
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,8 +165,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3078160078026564253}
   - component: {fileID: 3078160078026564254}
-  m_Layer: 8
-  m_Name: Floor_1 (1)
+  m_Layer: 10
+  m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,7 +247,7 @@ GameObject:
   - component: {fileID: 2848626093702340829}
   - component: {fileID: 7092335643316608449}
   m_Layer: 8
-  m_Name: Floor_1 (3)
+  m_Name: Floor 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +354,7 @@ GameObject:
   - component: {fileID: 7733687534809754429}
   - component: {fileID: 2836791879450940515}
   m_Layer: 8
-  m_Name: Floor_1 (2)
+  m_Name: Floor 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

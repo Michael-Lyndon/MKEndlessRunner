@@ -19,7 +19,9 @@ public class levelGenerator : MonoBehaviour
         prefab.transform.position = spawnPosition;
         prefab.transform.rotation = transform.rotation;
         prefab.SetActive(true);
+        Debug.Log("Before" + nextSpawnPoint);
         nextSpawnPoint += 22f;
+        Debug.Log("After" + nextSpawnPoint);
     }
 
     // Update is called once per frame
