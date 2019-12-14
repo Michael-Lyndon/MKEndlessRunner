@@ -19,6 +19,11 @@ public class levelGenerator : MonoBehaviour
         prefab.transform.position = spawnPosition;
         prefab.transform.rotation = transform.rotation;
         prefab.SetActive(true);
+        
+        for(int i = 0; i < prefab.transform.GetChild(0).childCount; i++){ //re-activates any collected coins - all items should be contained in a child empty of the prefab 
+            prefab.transform.GetChild(0).transform.GetChild(i).gameObject.SetActive(true); // with its child position being 0
+        }
+
         nextSpawnPoint += 22f;
     }
 

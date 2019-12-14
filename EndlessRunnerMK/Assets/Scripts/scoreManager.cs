@@ -29,4 +29,8 @@ public class scoreManager : MonoBehaviour
     public void resetScore(){
         scoreValue = 0;
     }
+
+    public void addScore(float f){
+        scoreValue += f;
+    }
 }
