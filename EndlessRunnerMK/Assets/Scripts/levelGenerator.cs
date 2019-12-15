@@ -5,7 +5,7 @@ using UnityEngine;
 public class levelGenerator : MonoBehaviour
 {
     public float nextSpawnPoint = 44f;
-    public objectPool[] objectPool;
+    public objectPool[] objectPool; //Make sure your object pools are being referenced here
     public Transform generationPoint; //Checks if we are at a position where we need to generate a new platform
     private int prefabSelector;
 

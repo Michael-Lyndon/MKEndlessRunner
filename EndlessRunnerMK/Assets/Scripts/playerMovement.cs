@@ -44,20 +44,20 @@ private Rigidbody2D playerRB;
 
         playerRB.velocity = new Vector2(playerSpeed, playerRB.velocity.y);
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began){
             if(canJump){
                 playerRB.velocity = new Vector2(playerRB.velocity.x, playerJump);
             }
         }
 
-        if(Input.GetKey(KeyCode.Space)){
+        if(Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Stationary){
             if(jumpDurationCount > 0){
                 playerRB.velocity = new Vector2(playerRB.velocity.x, playerJump);
                 jumpDurationCount-= Time.deltaTime;
             }
         }
 
-        if(Input.GetKeyUp(KeyCode.Space)){
+        if(Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended){
             jumpDurationCount = 0;
         }
 

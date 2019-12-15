@@ -537,7 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840515765}
   m_Layer: 0
-  m_Name: ObjectPool
+  m_Name: PrefabPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1728,7 +1728,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4f46c7770aa594e4a96c779ed0fc8444, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff7747b0302e9344e9cad0f08d610f6d, type: 3}
   m_Color: {r: 0.23148806, g: 0.54399157, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0

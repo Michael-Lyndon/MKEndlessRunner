@@ -5,12 +5,10 @@ using UnityEngine;
 public class objectPool : MonoBehaviour
 {
     public GameObject pooledObject;
-
     public int pooledQuantity;
-
     List<GameObject> objectPoolList;
     
-    // Start is called before the first frame update
+    // Make sure that your object pool is referenced by the levelLoader object
     void Start()
     {
         objectPoolList = new List<GameObject>();
