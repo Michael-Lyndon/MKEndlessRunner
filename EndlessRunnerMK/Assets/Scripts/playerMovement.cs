@@ -68,7 +68,7 @@ private Rigidbody2D playerRB;
 
     void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "lossCondition"){
-            gameStateManager.restartGame();
+            gameStateManager.gameLoss();
         }
     }
 
